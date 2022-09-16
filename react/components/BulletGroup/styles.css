@@ -1,0 +1,25 @@
+.bullet__item {
+    
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+bullet__item--title {
+    background-color: magenta;
+}
+
+bullet__item--image {
+    width: 80px;
+}
+
+bullet__item--link {
+    text-decoration: none;
+}
+
+@media screen and (min-width:760px) {
+
+    .bullet__item,
+    .bullet__item-image {
+        width: 100px;
+    }
+}
