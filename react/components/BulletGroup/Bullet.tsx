@@ -20,14 +20,14 @@ const Bullet = ({ src, titleBullet, link }: Props ) => {
         ]
     const handles = useCssHandles(CSS_HANDLES)
 
-    return (<div className={handles["bullet__item"]} > 
+    return (<div className={` pt1 p15 ${handles["bullet__item"]}`}> 
         <Link
             to = {link.url}
             className = {handles["bullet__item--link"]} 
             >
-            <img className={handles["bullet__item--image"]} src= { src } alt={titleBullet} />
+            <img className={`${handles["bullet__item--image"]} externalClass`} src={src} alt={titleBullet} />
 
-            <p className={handles["bullet__item--title"]}> {titleBullet} </p>
+            <p className={handles["bullet__item--title"]}>{titleBullet}</p>
         </Link>
     </div>
     )
@@ -38,7 +38,7 @@ Bullet.schema = {
     type: "object",
     properties:{
         src: {
-            title: "imagen de Bullet",
+            title: "Imagen de Bullet",
             type:"string",
             widget:{
                 "ui:widget": "image-uploader"
