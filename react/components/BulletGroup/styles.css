@@ -14,14 +14,14 @@
 
 .bullet__container::-webkit-scrollbar-track{
     background-clip: padding-box;
-    background-color: blue;
+    background-color: #5e5e5e;
     border-right: 16px solid transparent;
 
 }
 
 .bullet__container::-webkit-scrollbar-thumb{
     background-clip: padding-box;
-    background-color: red;
+    background-color:#843a8d; 
     border-right: 16px solid transparent;
     
 }
